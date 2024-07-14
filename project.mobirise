@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "atomic wallet",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": false,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/atomic-wallet.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://atomicw-allet.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://atomicw-allet.github.io/",
+    "mbrsiteDomain": "ekxprexicz",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Atomic Wallet™ | Home Official Site",
+        "meta_descr": "Atomic Wallet is universal non-custodial app for over 300 cryptocurrencies. Secure, manage and exchange your assets right in your hand! Exceptional security",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/atomicwallet-io.png\" alt=\"atomic wallet\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uiubIUHf0W",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Atomic Wallet - The Versatile Cryptocurrency Wallet for the Modern Investor</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of cryptocurrencies and digital assets, having a reliable and secure wallet to store, manage, and transact your holdings is of paramount importance. One platform that has consistently stood out in this space is <a href=\"https://atomicw-allet.github.io/\" class=\"text-primary\"><b>Atomic Wallet</b></a> - a feature-rich, multi-cryptocurrency wallet that has been steadily gaining traction among crypto enthusiasts and investors alike.<br><br>As we step into 2024, it's the perfect time to take a comprehensive look at Atomic Wallet and explore why it has become a go-to choice for many in the cryptocurrency community. From its robust security features to its expansive support for a wide range of digital assets, Atomic Wallet has proven itself to be a versatile and dependable solution for managing one's crypto portfolio.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Overview of Atomic Wallet:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Atomic Wallet is a non-custodial, decentralized cryptocurrency wallet that was launched in 2018. Unlike centralized exchanges or online wallets where your private keys are held by a third-party, Atomic Wallet gives you full control over your digital assets. The wallet is available across multiple platforms, including Windows, macOS, Linux, iOS, and Android, allowing users to access and manage their cryptocurrencies from any device.<br><br>One of the standout features of Atomic Wallet is its extensive asset support. As of August 2023, the wallet supports over 500 cryptocurrencies and digital tokens, including major ones like Bitcoin, Ethereum, Litecoin, Ripple, and Binance Coin, as well as a vast array of altcoins and DeFi projects. This breadth of asset coverage makes Atomic Wallet an attractive option for investors with diversified crypto portfolios.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Security and Privacy:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Security is a paramount concern for any cryptocurrency wallet, and Atomic Wallet excels in this regard. The wallet employs a range of advanced security measures to protect users' funds and personal information.<br><br><b>Secure Storage:</b> Atomic Wallet utilizes a non-custodial, client-side approach, which means that your private keys are stored locally on your device and are never transmitted to the Atomic Wallet servers. This ensures that your crypto assets are entirely under your control and are not vulnerable to centralized points of failure.<br><br><b>Multi-Signature Support:</b> Atomic Wallet supports multi-signature functionality, which allows users to set up additional layers of security for their wallets. This feature requires multiple private keys or signatures to authorize a transaction, significantly reducing the risk of unauthorized access or theft.<br><br><b>Hardware Wallet Integration:</b> Atomic Wallet seamlessly integrates with popular hardware wallets like Ledger and Trezor, enabling users to store their cryptocurrencies on these highly secure offline devices while still enjoying the convenience of the Atomic Wallet interface.<br><br><b>Biometric Authentication:</b> For added security, Atomic Wallet offers biometric authentication options, such as fingerprint or facial recognition, to protect access to the wallet.<br><br><b>Encrypted Backup:</b> Atomic Wallet provides users with the ability to create encrypted backups of their wallet, ensuring that their crypto assets can be recovered in the event of a device loss or malfunction.<br><br>In addition to these security features, Atomic Wallet also prioritizes user privacy. The wallet does not collect or store any personal information about its users, and all transactions are processed anonymously, without the need for KYC (Know Your Customer) verification.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Atomic Swap and Decentralized Exchange:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of the standout features of Atomic Wallet is its built-in support for atomic swaps - a decentralized, peer-to-peer exchange protocol that allows users to swap cryptocurrencies directly, without the need for a centralized exchange.<br><br>Atomic swaps enable users to exchange one cryptocurrency for another in a trustless and secure manner, as the transaction is facilitated through a smart contract and does not require any third-party intervention. This feature is particularly useful for users who prioritize privacy and want to avoid the potential risks associated with centralized exchanges, such as hacks, KYC requirements, and trading restrictions.<br><br>In addition to atomic swaps, Atomic Wallet also integrates with decentralized exchanges (DEXes), allowing users to trade cryptocurrencies directly within the wallet interface. By leveraging the liquidity and trading capabilities of these DEXes, Atomic Wallet users can execute trades and exchange digital assets without having to navigate the complexities of a separate exchange platform.<br><br>This seamless integration of atomic swaps and DEX functionality within the Atomic Wallet ecosystem empowers users to manage their entire crypto portfolio, including trading and exchanging assets, from a single, secure platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Staking and Earning Rewards:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As the cryptocurrency landscape continues to evolve, many digital assets have incorporated staking as a means of securing their networks and rewarding long-term holders. Atomic Wallet recognizes the importance of staking and has integrated support for a wide range of staking-enabled cryptocurrencies.<br><br>Within the Atomic Wallet interface, users can easily stake their eligible cryptocurrencies and earn passive rewards for supporting the network. This feature is particularly beneficial for investors who want to maximize the returns on their crypto holdings without having to manage the technical complexities of staking on their own.<br><br>Atomic Wallet's staking functionality extends beyond just the wallet's native token, ATMC. The platform supports staking for a diverse range of cryptocurrencies, including Ethereum, Tezos, Cosmos, Polkadot, and many others. This allows users to diversify their staking portfolio and potentially generate consistent passive income from their crypto assets.<br><br>Furthermore, Atomic Wallet's staking interface provides users with detailed information about the expected rewards, lock-up periods, and other relevant staking parameters, making it easier for them to make informed decisions about which assets to stake.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>DApp Browser and Cryptocurrency Lending:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In addition to its core wallet functionalities, Atomic Wallet has also integrated a decentralized application (DApp) browser, allowing users to interact with a wide range of decentralized applications directly within the wallet interface.<br><br>The DApp browser enables users to access and utilize various DeFi (Decentralized Finance) protocols, such as lending platforms, decentralized exchanges, and yield farming opportunities. This integration empowers Atomic Wallet users to engage with the thriving DeFi ecosystem without having to leave the wallet's secure environment.<br><br>Furthermore, Atomic Wallet has also incorporated cryptocurrency lending capabilities, enabling users to lend their digital assets to borrowers and earn interest on their holdings. This feature provides an additional avenue for Atomic Wallet users to generate passive income from their crypto assets, complementing the wallet's staking functionalities.<br><br>By offering a seamless DApp integration and lending options, Atomic Wallet positions itself as a comprehensive solution for users who want to engage with the broader decentralized finance landscape while maintaining the security and convenience of a centralized wallet platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Atomic Wallet Swap:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of the recent additions to Atomic Wallet's suite of features is the Atomic Wallet Swap - a built-in cryptocurrency exchange service that allows users to quickly and securely swap between a wide range of digital assets without leaving the wallet interface.<br><br>The Atomic Wallet Swap leverages the same decentralized, peer-to-peer technology that powers the wallet's atomic swap functionality, ensuring that users maintain control over their private keys and transaction data throughout the exchange process. This feature is particularly useful for users who need to convert one cryptocurrency to another for various purposes, such as making payments, diversifying their portfolio, or taking advantage of market opportunities.<br><br>The Atomic Wallet Swap offers competitive exchange rates and low fees, making it an attractive option for users who want to minimize the cost of their cryptocurrency trades. Additionally, the service supports a vast array of digital assets, allowing Atomic Wallet users to swap between a wide range of cryptocurrencies, stablecoins, and tokens without the need to navigate multiple exchange platforms.<br><br>By integrating the Atomic Wallet Swap, the platform further consolidates its position as a one-stop-shop for crypto enthusiasts, providing them with a seamless and secure way to manage their entire digital asset portfolio, including trading and exchanging cryptocurrencies.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Atomic Wallet Dashboard and User Experience:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Atomic Wallet's user interface and overall user experience have been designed with the needs of both novice and experienced cryptocurrency users in mind. The wallet's dashboard provides a clean and intuitive layout, making it easy for users to navigate through their portfolio, track their holdings, and perform various crypto-related tasks.<br><br>The dashboard offers a comprehensive overview of a user's crypto assets, displaying the current balances, price charts, and transaction histories for each supported cryptocurrency. Users can also quickly access the wallet's various features, such as sending and receiving funds, staking, swapping, and managing their DApp interactions, all from a centralized and well-organized interface.<br><br>Atomic Wallet also provides users with detailed insights and analytics about their crypto holdings, including real-time price updates, market trends, and portfolio performance. This information-rich dashboard empowers users to make more informed decisions about their investments and stay up-to-date with the ever-changing cryptocurrency landscape.<br><br>Furthermore, Atomic Wallet has prioritized the user experience by incorporating intuitive design elements, such as responsive layouts, seamless navigation, and clear visual cues. This attention to detail ensures that users, regardless of their technical proficiency, can easily navigate the wallet and manage their digital assets with confidence.<br><br>Atomic Wallet's commitment to providing a user-friendly and visually appealing interface has been a key factor in its widespread adoption, as it allows both novice and experienced crypto users to effortlessly manage their portfolios and explore the various features the wallet has to offer.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the dynamic and ever-evolving world of cryptocurrencies, Atomic Wallet has firmly established itself as a leading non-custodial wallet solution. With its robust security features, expansive asset support, decentralized exchange capabilities, staking and earning opportunities, and intuitive user experience, Atomic Wallet has emerged as a go-to platform for crypto enthusiasts and investors seeking a versatile and reliable way to manage their digital assets.<br><br>As the cryptocurrency market continues to mature and evolve, Atomic Wallet's ability to adapt and integrate new features will be crucial in maintaining its position as a front-runner in the crypto wallet space. By consistently enhancing its offerings and providing users with a seamless and secure experience, Atomic Wallet is poised to remain a trusted companion for individuals navigating the dynamic world of digital finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uiubJ76B11",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
